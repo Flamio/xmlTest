@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="address">
+        <xs:annotation>
+            <xs:documentation>
+                Адрес
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="street" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Улица
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="city" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Город
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="house" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Дом
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="person">
+        <xs:annotation>
+            <xs:documentation>
+                Персона
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="fio" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>
+                            ФИО
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="birthday" type="xs:date">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Дата рождения
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element ref="address"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
