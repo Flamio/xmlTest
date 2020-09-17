@@ -7,18 +7,16 @@ mvn clean compile - для генерации объектов из xsd схем
 
 пример xml файла : 
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
 ```
-
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <person>
-<fio>asdjlfn</fio>
-<birthday>2020-08-10</birthday>
-<address>
-  <street>sadfasfd</street>
-  <house>123</house>
-  <city>Izhevsk</city>
-</address>
+    <fio>asdjlfn</fio>
+    <birthday>2020-08-10</birthday>
+    <address>
+          <street>sadfasfd</street>
+          <house>123</house>
+          <city>Izhevsk</city>
+    </address>
 </person>
 
 ```
