@@ -19,14 +19,14 @@ public class MainService {
   public static final String NEW_CITY = "Moscow";
   public static final BigInteger NEW_HOUSE = BigInteger.valueOf(55);
 
-  /** провайдер для работы с файлами. */
+  /** Провайдер для работы с файлами. */
   private final FileProvider fileProvider;
 
-  /** провайдер для работы с xml. */
+  /** Провайдер для работы с xml. */
   private final XmlProvider xmlProvider;
 
   /**
-   * начать выполнение.
+   * Начать выполнение.
    *
    * @param xmlFilePath путь до xml файла.
    */
@@ -45,6 +45,7 @@ public class MainService {
       log.info("complete, new xml file - changed.xml");
     } catch (Exception e) {
       log.error(e.getMessage(), e);
+      throw e;
     }
   }
 }

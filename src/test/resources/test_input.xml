@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+    <fio>asdjlfn</fio>
+    <birthday>2020-08-10</birthday>
+    <address>
+        <street>sadfasfd</street>
+        <house>123</house>
+        <city>Izhevsk</city>
+    </address>
+</person>

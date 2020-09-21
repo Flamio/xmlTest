@@ -9,6 +9,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class XmlTestApplication {
 
   public static void main(String[] args) {
+    if (args.length == 0) throw new RuntimeException("Должен быть указан входной файл!");
 
     final ConfigurableApplicationContext run =
         SpringApplication.run(XmlTestApplication.class, args);
